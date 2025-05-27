@@ -6,15 +6,10 @@
     }
 
     body {
-        width: 100%;
+        width: 300px;
         min-height: 100vh;
         background-image: url(../assets/Fundo.jpg);
         background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
     }
 
     main {
@@ -24,22 +19,72 @@
         background-color: #524e4e40;
         background-position: center;
         backdrop-filter: 8px;
-        top: 50%;
-        left: 50%;
-        translate: -50% -50%;
+        top: 25%;
+        left: 38%;
         border: solid 5px;
         border-radius: 16px;
         padding: 66px 16px 16px 16px;
     }
 
     h1 {
-        color: white;
+        color: whitesmoke;
+        text-align: center;
     }
 
     p {
-        color: whitesmoke;
+        color: white;
+        text-align: center;
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px
+    }
+
+    li {
+        list-style-type: none;
     }
 
     a {
+        width: 100%;
+        height: 32px;
+        border: 1px solid #524e4e40;
+        border-radius: 8px;
         color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+    }
+
+    a:hover {
+        border: 1px solid blue;
+        font-size: 18px;
+    }
+
+    i {
+        margin-right: 8px;
+    }
+
+    .perfil {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        translate: -50% -50%;
+        border-radius: 50%;
+        border-radius: 50%;
+        border: 4px solid black;
+        overflow: hidden;
+        perspective: 1000px;
+        background-color: black;
+
+    }
+
+    .foto img {
+        width: 100%;
+        display: block;
     }
